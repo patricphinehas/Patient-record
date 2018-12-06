@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Tracker - ADMIN ACCESS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/min.js" type="text/javascript"></script>
+    <link rel="icon" href="/images/Preloader_1.gif" type="image/gif">
+
+
+</head>
+
+<body>
+
+    <div class="w-row">
+        <div class="w-col w-col-6"><img src="/images/hello2.jpg" alt="" width="937"></div>
+        <div class="column w-col w-col-6">
+            <div>
+                <div class="w-form">
+                    <form id="wf-form-LOGIN" name="wf-form-LOGIN" data-name="LOGIN" class="form w-clearfix" method="POST"
+                        action="./../users/priv">
+                        <h1>ADMIN ACCESS PANEL</h1>
+                        <label for="username" id="username" data-name="username">username :
+                            <%=username%></label>
+                        <label for="Approval">Approval</label>
+                        <input type="text" class="w-input" maxlength="256" name="username" data-name="username" id="username"
+                            required="" placeholder="enter the username to be update the privilage">
+                        <!-- <input type="number" class="w-input" maxlength="256" name="priv" data-name="priv" id="priv"
+                            required="" placeholder="1 for approve and 0 to reject"> -->
+                        <input type="submit" value="UPDATE PRIVILAGE" data-wait="Please wait..." class="w-button">
+                        <a href="/monitor" class="link">Monitor</a>
+                        <!-- <hr> -->
+                        <a href="/newadd" class="link">Add New Patient</a>
+                        <!-- <hr> -->
+                        <a href="/" class="link">logout</a>
+                    </form>
+                    <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
